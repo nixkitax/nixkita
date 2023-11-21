@@ -15,6 +15,7 @@
 
 # Mono auto generated files
 mono_crash.*
+.contentlayer
 
 # Build results
 [Dd]ebug/
@@ -117,7 +118,6 @@ ipch/
 *.vsp
 *.vspx
 *.sap
-
 # Visual Studio Trace Files
 *.e2e
 

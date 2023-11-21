@@ -13,7 +13,7 @@ const Header = () => {
         <Link href="/" aria-label={siteMetaData.nickname} >
           <div className="flex items-center justify-between">
             {typeof siteMetaData.headerTitle === 'string' ? (
-              <div className=" h-6 text-2xl font-mono xl:block ">
+              <div className=" h-6 text-3q  text-2xl font-mono xl:block ">
                 <RoughNotation type="underline" show={true}>{siteMetaData.nickname}</RoughNotation> | <RoughNotation type="bracket" show={false}>{siteMetaData.title}</RoughNotation>
               </div>
             ) : (
@@ -28,7 +28,7 @@ const Header = () => {
             <Link
               key={link.title}
               href={link.href}
-              className="hidden sm:block font-medium text-gray-900 dark:text-gray-100"
+              className="hidden text-m sm:block font-mono font-medium text-gray-900 dark:text-gray-100"
             >
               {link.title} 
             </Link>

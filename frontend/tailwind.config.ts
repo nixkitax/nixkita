@@ -15,7 +15,7 @@ const config: Config = {
         gray: colors.gray,
       },
       fontFamily: {
-        'space-grotesk': ["Space Grotesk", "normal"]
+        'sans': ['Helvetica', 'Arial', 'sans-serif'],
       },
       keyframes: {
         wave: {
@@ -33,6 +33,9 @@ const config: Config = {
         'waving-hand': 'wave 2s linear infinite',
       },
     },
-  }
+  },
+  plugins: [
+    require('@tailwindcss/typography')
+  ]
 }
 export default config

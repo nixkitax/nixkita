@@ -31,7 +31,7 @@ const Profile = () => {
         </div>
         <div>
           <h1 className="pt-10 font-medium"> About </h1>
-          <p className="font-light pt-1"> Lorem, ipsum dolor<RoughNotation type="highlight" show={true} color='#FFE6FB' animationDelay={2000} > sit amet consectetur adipisicing elit</RoughNotation>. Ducimus consequatur laudantium ab, cum aperiam velit iure eos dolore assumenda, praesentium odio ratione sint! Autem iusto velit ipsum temporibus omnis voluptas! 
+          <p className="font-light pt-1"> Lorem, ipsum dolor<RoughNotation type="highlight" show={true} color='#FEFFD4' animationDelay={2000} > sit amet consectetur adipisicing elit</RoughNotation>. Ducimus consequatur laudantium ab, cum aperiam velit iure eos dolore assumenda, praesentium odio ratione sint! Autem iusto velit ipsum temporibus omnis voluptas! 
           </p>
         </div>
         <div>

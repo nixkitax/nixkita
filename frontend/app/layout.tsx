@@ -17,9 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${space.className} flex flex-col justify-between font-sans`}>
+      <body className={` ${space.className} flex flex-col justify-between font-sans`}>
+     
           <Header/>
             {children}
+
         </body>
     </html>
   )
