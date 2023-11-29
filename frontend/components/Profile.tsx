@@ -31,7 +31,11 @@ const Profile = () => {
         </div>
         <div>
           <h1 className="pt-10 font-medium"> About </h1>
-          <p className="font-light pt-1"> Lorem, ipsum dolor<RoughNotation type="highlight" show={true} color='#FEFFD4' animationDelay={2000} > sit amet consectetur adipisicing elit</RoughNotation>. Ducimus consequatur laudantium ab, cum aperiam velit iure eos dolore assumenda, praesentium odio ratione sint! Autem iusto velit ipsum temporibus omnis voluptas! 
+          <p className="font-light pt-1"> 
+          My name is Nicol, and I'm a passionate technology enthusiast currently pursuing my Master's 
+          degree in Computer Science at the University of Milano-Bicocca. I was born in Rome then I 
+          continued my studies in Milan, Italy, and from a young age, I had a natural inclination towards
+           the world of technology and computers.
           </p>
         </div>
         <div>
