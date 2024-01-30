@@ -18,7 +18,7 @@ const Blog = () => {
   console.log(slugs)
 
   return (
-      <div className="mt-10 flex flex-wrap justify-center custom-shape-divider-top-1700522096">
+      <div className="mt-10 flex flex-col justify-center custom-shape-divider-top-1700522096 md: mx-10">
         <div className="flex max-w w-full h-40 justify-center mb-0">
           <AFCLogo />
           
@@ -26,7 +26,7 @@ const Blog = () => {
         <div>
         <Hero/>
         </div>
-        <div className="flex auto-row pt-20 md: flex-row gap-14">
+        <div className="flex auto-row pt-20 justify-center">
         <BlackButton text="Latest post"/>
         <BlackButton text="Algorithms"/>
         <BlackButton text="Latest post"/>

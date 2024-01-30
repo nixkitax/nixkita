@@ -1,6 +1,6 @@
 const siteMetadata = {
     title: 'aFriendlyCracker',
-    author: 'Nicol Emanuele',
+    author: 'Nicol "nixkita" Emanuele',
     nickname: 'nixkita',
     headerTitle: 'aFriendlyCracker',
     description: 'Learn, discover and secure!',
@@ -12,9 +12,11 @@ const siteMetadata = {
     socialBanner: '/static/images/twitter-card.png',
     mastodon: 'https://mastodon.social/',
     email: 'nicol.eeemanuele@icloud.com',
-    github: 'https://github.com/lyylaaa',
-    twitter: 'https://twitter.com/Twitter',
-    linkedin: 'https://www.linkedin.com/in/nicolemanuele',
+    github: 'https://github.com/nixkitax',
+    twitter: 'https://twitter.com/nixkitax',
+    instagram: 'https://www.instagram.com/52nixkita',
+    linkedin: 'https://www.linkedin.com/in/nicolemanuele/',
+    steam: 'https://steamcommunity.com/id/nixkita/',
     locale: 'en-US'
 }
 

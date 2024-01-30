@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import siteMetaData from '@/data/siteMetaData';
 import headerNavLinks from '@/data/headerNavLinks';
-import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
+import { RoughNotation } from 'react-rough-notation';
 
 const Header = () => {
   return (
@@ -14,10 +14,6 @@ const Header = () => {
               <div className="text-center sm:text-left text-lg sm:text-2xl font-mono">
                 <RoughNotation type="underline" show={true}>
                   {siteMetaData.nickname}
-                </RoughNotation>{' '}
-                |{' '}
-                <RoughNotation type="bracket" show={false}>
-                  {siteMetaData.title}
                 </RoughNotation>
               </div>
             ) : (
@@ -26,6 +22,7 @@ const Header = () => {
           </div>
         </Link>
       </div>
+    
       <div className="flex items-center leading-5 space-x-2 sm:space-x-4">
         {headerNavLinks.map((link) => (
           <Link
@@ -37,6 +34,7 @@ const Header = () => {
           </Link>
         ))}
       </div>
+      
     </header>
   );
 };
