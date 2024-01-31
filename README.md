@@ -1,4 +1,4 @@
-# Nicol's Personal Website
+# nixkita's Personal Website
 
 Welcome to my personal website! This project is built using Next.js, a React framework for building modern web applications.
 
