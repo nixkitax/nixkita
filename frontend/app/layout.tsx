@@ -1,8 +1,7 @@
 import "./globals.css";
-import { Space_Grotesk } from "next/font/google";
-import type { Metadata } from "next";
+import Head from "next/head";
 
-const space = Space_Grotesk({ subsets: ["latin"] });
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "nixkita",
@@ -16,9 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={` ${space.className} flex flex-col justify-between font-sans`}
-      >
+      <Head>
+        <link
+          href="https://fonts.cdnfonts.com/css/sf-pro-display"
+          rel="stylesheet"
+        />
+      </Head>
+      <body className={`flex flex-col justify-between font-sans`}>
         {children}
       </body>
     </html>

@@ -15,7 +15,7 @@
 
 # Mono auto generated files
 mono_crash.*
-.contentlayer
+.next/
 
 # Build results
 [Dd]ebug/
@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Local Netlify folder
+.netlify

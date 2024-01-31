@@ -13,7 +13,11 @@ const Profile = () => {
             <div className="flex justify-center  items-center sm:justify-between">
               {typeof siteMetaData.headerTitle === "string" ? (
                 <div className="flex justify-center text-center sm:text-left text-lg sm:text-2xl font-mono">
-                  <RoughNotation type="underline" show={true}>
+                  <RoughNotation
+                    type="underline"
+                    show={true}
+                    animationDelay={1000}
+                  >
                     <div className="flex justify-center text-center">
                       {siteMetaData.nickname}
                     </div>
@@ -50,18 +54,17 @@ const Profile = () => {
         <div>
           <h1 className="pt-10 font-medium"> About </h1>
           <p className="font-light pt-1">
-            My name is Nicol, and I'm a passionate technology enthusiast
+            My name is Nicol, and I am a passionate technology enthusiast
             currently pursuing my Master's degree in Computer Science at the
-            University of Milano-Bicocca. I was born in Rome then I continued my
-            studies in Milan, Italy, and from a young age, I had a natural
+            University of Milano-Bicocca. I was born in Rome, and I continued my
+            studies in Milan, Italy. From a young age, I have had a natural
             inclination towards the world of technology and computers. My
-            hobbies are esports online, csgo for example.
+            hobbies include playing esports online.
           </p>
         </div>
         <div>
           <h1 className="pt-10 font-medium"> Projects </h1>
           <div>
-            {/* Refactored using ProjectCard component */}
             <ProjectCard
               year="2024"
               title="Schnorr Signature Verification in Circom"
