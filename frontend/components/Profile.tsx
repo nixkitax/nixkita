@@ -1,17 +1,28 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import siteMetadata from "@/data/siteMetaData";
-import siteMetaData from "@/data/siteMetaData";
+import siteMetadata from "@/data/siteMetaData"; // Remove duplicates
 import { RoughNotation } from "react-rough-notation";
 import ProjectCard from "./ProjectCard";
+import EducationCard from "./EducationCard";
+import { motion, useScroll, useSpring } from "framer-motion";
+
 const Profile = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   return (
-    <div className="flex justify-center w-full m-auto h-screen cursor-pointer">
+    <div className="flex justify-center w-full m-auto h-screen">
+      <motion.div className="progress-bar bg-black" style={{ scaleX }} />
+
       <div className="p-8 w-full max-w-xl ">
         <div className="flex mb-4 justfy-center mt-8 sm:mb-0">
-          <Link href="/" aria-label={siteMetaData.nickname}>
+          <Link href="/" aria-label={siteMetadata.nickname}>
             <div className="flex justify-center  items-center sm:justify-between">
-              {typeof siteMetaData.headerTitle === "string" ? (
+              {typeof siteMetadata.headerTitle === "string" ? (
                 <div className="flex justify-center text-center sm:text-left text-lg sm:text-2xl font-mono">
                   <RoughNotation
                     type="underline"
@@ -19,12 +30,12 @@ const Profile = () => {
                     animationDelay={1000}
                   >
                     <div className="flex justify-center text-center">
-                      {siteMetaData.nickname}
+                      {siteMetadata.nickname}
                     </div>
                   </RoughNotation>
                 </div>
               ) : (
-                siteMetaData.headerTitle
+                siteMetadata.headerTitle
               )}
             </div>
           </Link>
@@ -34,8 +45,8 @@ const Profile = () => {
             <Image
               src="/static/images/avatar.png"
               alt="avatar"
-              width={130}
-              height={130}
+              width={100}
+              height={100}
             />
           </div>
           <div>
@@ -83,23 +94,23 @@ const Profile = () => {
 
             <ProjectCard
               year="2023"
-              title="Full Stack Developer - Software Project Development"
+              title="Full Stack Development - Wine Catalog Application"
               link="/"
-              description="Designed and implemented a Dockerized project showcasing a web application utilizing Flask as the frontend and FastAPI as the backend."
+              description="Developed and deployed a comprehensive wine catalog application using Docker, featuring advanced search functionalities for wine enthusiasts. The project utilized Flask for the frontend and FastAPI for the backend, ensuring a seamless and responsive user experience."
               stack="Flask • Docker • FastAPI"
             />
-
-            <ProjectCard
-              year="2022"
-              title="gorillax"
-              link="https://github.com/nixkitax/circom-schnorr-verify"
-              description="Designed a tool for retrieving and storing statistics about Twitch streamers, particularly viewers per hour."
-              stack="Python"
-            />
-            {/* End of refactored code */}
           </div>
         </div>
-
+        <div>
+          <h1 className="pt-10 font-medium"> Education </h1>
+          <EducationCard
+            year="2023 - present"
+            istitute="Università degli Studi di Milano - Bicocca"
+            link="/"
+            description="Master’s Degree in Computer Science"
+            stack="Machine Learning • Theory of Computation • Concurrent Models • Software Development Process"
+          />
+        </div>
         <div>
           <h1 className="pt-10 font-medium"> Links </h1>
           <div className="pt-7">
